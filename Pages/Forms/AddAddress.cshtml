@@ -1,0 +1,13 @@
+﻿@page
+@model RazorPagesUI.Pages.Forms.AddAddressModel
+@{
+}
+<title>@ViewData["Title"] - Add Address</title>
+
+<form method="post">
+    <input type="text" asp-for="Address.City" placeholder="City" />
+    <input type="text" asp-for="Address.State" placeholder="State" />
+    <input type="text" asp-for="Address.StreetAddress" placeholder="Street Address" />
+    <input type="text" asp-for="Address.ZipCode" placeholder="ZipCode" />
+    <button type="submit" class="btn">Submit</button>
+</form>
